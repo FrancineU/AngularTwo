@@ -7,6 +7,7 @@ import { FormComponent } from './form/form.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UserInfoComponent } from './user-info/user-info.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { UserInfoComponent } from './user-info/user-info.component';
     FormComponent,
     RepositoriesComponent,
     NavbarComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
