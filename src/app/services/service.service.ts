@@ -73,7 +73,7 @@ export class ServiceService {
         }
 
         const promise = new Promise((resolve, reject) => {
-            this.http.get<ApiResponse>('https://api.github.com/search/repositories?q=' + searchName + ' &per_page=10 ' + environment.miApi).toPromise().then(getRepoResponse => {
+            this.http.get<ApiResponse>('https://api.github.com/search/repositories?q=' + searchName + ' &per_page=10 ' + environment.mytoken).toPromise().then(getRepoResponse => {
                 this.searchRepo = getRepoResponse.items;
 
                 resolve();
